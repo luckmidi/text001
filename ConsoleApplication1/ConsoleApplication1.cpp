@@ -26,19 +26,19 @@ void PrintMap(map<KTy, Ty> map)
 	for (iterator p = map.begin(); p != map.end(); p++)
 		cout << p->first << " : " << p->second << endl;
 
-	ofstream myfile("C:\\111\\121.txt");
-	if (myfile.is_open())
-	{
-		myfile << "p->first   \n";
-		myfile << "p->first   \n";
-		myfile << "p->first   \n";
-		myfile << "This is another line.\n";
-		myfile.close();
-	}
-	else {
-		cout << "Unable to open file";
-		return 0;
-	}
+	//ofstream myfile("C:\\111\\121.txt");
+	//if (myfile.is_open())
+	//{
+	//	myfile << "p->first   \n";
+	//	myfile << "p->first   \n";
+	//	myfile << "p->first   \n";
+	//	myfile << "This is another line.\n";
+	//	myfile.close();
+	//}
+	//else {
+	//	cout << "Unable to open file";
+	//	return 0;
+	//}
 
 }
 
