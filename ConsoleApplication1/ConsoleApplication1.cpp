@@ -31,6 +31,21 @@ int main(void)
 {
 	static const char* fileName = "C:\\111\\12.txt";
 
+
+	ofstream myfile("C:\\111\\121.txt");
+	if (myfile.is_open())
+	{
+		myfile << "This is a line.\n";
+		myfile << "This is another line.\n";
+		myfile.close();
+	}
+	else {
+		cout << "Unable to open file";
+		return 0;
+	}
+
+
+
 	// Will store the word and count.
 	map<string, unsigned int> wordsCount;
 
