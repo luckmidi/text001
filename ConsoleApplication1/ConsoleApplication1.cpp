@@ -24,18 +24,14 @@ void PrintMap(map<KTy, Ty> map)
 {
 	typedef std::map<KTy, Ty>::iterator iterator;
 	for (iterator p = map.begin(); p != map.end(); p++)
-		cout << p->first << ": " << p->second << endl;
-}
-
-int main(void)
-{
-	static const char* fileName = "C:\\111\\12.txt";
-
+		cout << p->first << " : " << p->second << endl;
 
 	ofstream myfile("C:\\111\\121.txt");
 	if (myfile.is_open())
 	{
-		myfile << "This is a line.\n";
+		myfile << "p->first   \n";
+		myfile << "p->first   \n";
+		myfile << "p->first   \n";
 		myfile << "This is another line.\n";
 		myfile.close();
 	}
@@ -43,6 +39,14 @@ int main(void)
 		cout << "Unable to open file";
 		return 0;
 	}
+
+}
+
+int main(void)
+{
+	static const char* fileName = "C:\\111\\12.txt";
+
+
 
 
 
